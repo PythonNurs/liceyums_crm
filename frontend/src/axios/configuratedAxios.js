@@ -56,7 +56,7 @@ const authAxios = () => {
 
       if (
         error.response.status === 403 &&
-        originalRequest.url === "https://crm-academy.tk/api/token/"
+        originalRequest.url === "http://crm-academy.tk/api/token/"
       ) {
         history.push("/authentication/login");
         return Promise.reject(error);
