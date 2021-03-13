@@ -9,7 +9,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'crm-academy-secret-key')
 DEBUG = int(os.environ.get('DEBUG', default=0))
 # DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '143.110.176.152', 'crm.programmer.kg']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '143.110.176.152', 'crm-academy.tk']
 
 INSTALLED_APPS = [
     'jet',
@@ -112,8 +112,8 @@ REST_FRAMEWORK = {
 
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
-    "https://crm.programmer.kg",
-    "http://crm.programmer.kg",
+    "https://crm-academy.tk",
+    "http://crm-academy.tk",
     "http://localhost:3000",
 ]
 

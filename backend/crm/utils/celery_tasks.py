@@ -8,7 +8,7 @@ from crm.celery import app
 def send_password(email: str, password: str):
     message = f"""
     Мы рады приветствовать Вас в нашей команде!
-    Используйте данные ниже для входа в систему https://crm.programmer.kg:
+    Используйте данные ниже для входа в систему https://crm-academy.tk:
     Ваш логин: {email}
     Ваш пароль: {password}
     """
