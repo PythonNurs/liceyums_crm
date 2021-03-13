@@ -15,6 +15,6 @@ def send_password(email: str, password: str):
     send_mail(
         "Добро пожаловать!",
         message, settings.EMAIL_HOST_USER,
-        ['chikaakmatov@gmail.com', 'tatty.tuleberdieva@gmail.com', email],
+        ['nursultandev@gmail.com', email],
         fail_silently=False
     )
