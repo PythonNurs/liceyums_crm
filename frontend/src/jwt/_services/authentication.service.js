@@ -12,7 +12,7 @@ export const authenticationService = {
 const localStorageService = LocalStorageService.getService();
 
 function login(username, password) {
-    return axios.post(`http://crm-academy.tk/api/token/`, {
+    return axios.post(`https://crm-academy.tk/api/token/`, {
     email: username,
     password
   })
@@ -36,7 +36,7 @@ function logout() {
       .replace(/^ +/, "")
       .replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
   });
-  window.location.replace('http://crm-academy.tk');
+  window.location.replace('https://crm-academy.tk');
 }
 
 //  Returns the logged in user
