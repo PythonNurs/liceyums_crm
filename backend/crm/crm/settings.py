@@ -9,7 +9,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'crm-academy-secret-key')
 DEBUG = int(os.environ.get('DEBUG', default=0))
 # DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '94.228.112.229', 'crm-academy.tk']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '167.172.177.238', 'crm-academy.tk']
 
 INSTALLED_APPS = [
     'jet',
@@ -161,8 +161,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER', 'nursultandev@gmail.com')
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', 'zygnyqdgznqajrwk')
+EMAIL_HOST_USER = 'nursultandev@gmail.com'
+EMAIL_HOST_PASSWORD = 'zygnyqdgznqajrwk'
 
 JET_THEMES = [
     {
